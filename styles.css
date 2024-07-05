@@ -1,0 +1,144 @@
+/* Reset some basic elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+/* General paragraph styling */
+p {
+    font-size: 18px;
+}
+.container img {
+    width: 150px;
+    height: 100px;
+    margin-top: 1px;
+    position: center;
+
+}
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-image: url("assets/image.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px 0;
+}
+
+main h2 {
+    color: #af4c90;
+    margin-bottom: 10px;
+}
+
+.intro, .about, .services, .contact {
+    margin-bottom: 40px;
+}
+.services ul {
+    list-style: none;
+    padding: 0;
+}
+
+.services ul li {
+    background: #f4f4f4;
+    margin: 10px 0;
+    padding: 10px;
+    border-left: 5px solid #cb4e2f;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact form input, .contact form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #76cbad;
+    border-radius: 5px;
+}
+
+
+.contact form button {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background: #eea340;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.contact form button:hover {
+    background: #e012b0;
+}
+
+footer {
+    background-image: url("assets/image.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+    }
+
+    nav ul li {
+        display: block;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+}
